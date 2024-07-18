@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .black {
+      background-color: #232629;
+    }
+    .white {
+      background-color:#F0F1EC ;
+    }
+    .blue {
+      background-color:#004592 ;
+    }
+    .yellow {
+      background-color: #F9D01E;
+     
+    }
+    .red {
+      background-color: #E72F24;
+    }
+    .one {
+      grid-column-start: 2;
+      grid-column-end: 5;
+    }
+    .two{
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+    .three {
+      grid-area: 2 / 2 / 3 / 3;
+    }
+    .four {
+     grid-area: 1 /1 /2 /2;
+    }
+    .five {
+     grid-area: 2 /1/4/2
+    }
+    
+    .container {
+      width:748px ;
+      height: 748px;
+      display: grid;
+      background-color: black;
+      grid-template-rows: 414px 285px 20px ;
+      grid-template-columns: 320px 351px 50px;
+      gap:9px;
+      
+    }
+    .grid2{
+      grid-area: 2/ 3/5/5;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 130px 155px  20px;
+      gap: 10px;
+    }
+    .grid3{
+      grid-area: 3/1/5/3;
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: 320px 198px 153px;
+      gap:9px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+   <div class="container">
+       <div class="red"></div>
+       <div class="white one"></div>
+       <div class="white two"></div>
+       <div class="white three"></div>
+       <div class="grid2">
+       <div class="blue"></div>
+       <div class="white five"></div>
+       </div>
+       <div class="grid3">
+       <div class="white four"></div>
+       <div class="yellow"></div>
+       <div class="black"></div>
+      </div>
+   </div>
+</body>
+
+</html>
